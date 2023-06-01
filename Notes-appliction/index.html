@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            background-color: #B2DFDB;
+            width: 90%;
+            margin: auto;
+            padding: 2%;
+
+            display: flex;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        button {
+            height: 30px;
+            background-color: #00897B;
+            color: white;
+            font-weight: bold;
+        }
+
+        nav a {
+            font-size: 20px;
+            text-decoration: none;
+
+        }
+
+        nav a:hover {
+            font-size: 25px;
+        }
+
+        nav a {
+            justify-content: space-between;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#">Homepage</a>
+        <a href="./notes.html">Notes</a>
+        <a href="./signin.html">Sign In</a>
+        <a href="./signup.html">Sign Up</a>
+    </nav>
+
+    <div>
+        <h1 style="margin-left:40%">Welcome to HomePage</h1>
+        <h1 style="margin-left:42%">Please Signin/Signup</h1>
+    </div>
+
+
+
+
+</body>
+<script>
+    fetch("https://blog-app-rmpi.onrender.com/").then((res) => {
+        return res.json()
+    }).then((data) => {
+        console.log(data)
+    }).catch((err) => {
+        console.log(err)
+    })
+
+
+</script>
+
+
+
+
+</html>
